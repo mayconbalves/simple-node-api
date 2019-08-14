@@ -1,0 +1,20 @@
+{
+  "name": "simple-node-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayconbalves/simple-node-api.git"
+  },
+  "keywords": [],
+  "author": "Maycon Alves <mayconmustaine@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mayconbalves/simple-node-api/issues"
+  },
+  "homepage": "https://github.com/mayconbalves/simple-node-api#readme"
+}
