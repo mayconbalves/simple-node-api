@@ -1,8 +1,23 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
+const MONGODB_URI = require('./.env')
 
 const app = express()
 const product = require('./routes/product.router') // Imports routes for the products
+
+const mongoDB = process.env.MONGODB_URI
+
+mongoose.connect(mongoDB, {
+  useNewUrlParser : true
+});
+mongoose.Promise = global.Promise
+const db = mongoose.connection
+db.on('error', console.error.bind(console, 'MongoDB connection error:'))
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}))
+
 
 app.use('/products', product)
 
