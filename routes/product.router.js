@@ -9,4 +9,5 @@ const product_controller = require('../controllers/product.controller')
 router.get('/test', product_controller.test)
 router.get('/:id', product_controller.product_details)
 router.post('/create', product_controller.product_create)
+router.put('/:id/update', product_controller.product_update)
 module.exports = router
