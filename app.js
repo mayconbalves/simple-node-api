@@ -20,6 +20,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(cors())
 
+// baseUrl:  http://localhost:8080/products/
 app.use('/products', product)
 
 const port = 8080
